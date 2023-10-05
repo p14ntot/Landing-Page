@@ -1,0 +1,296 @@
+/* init my css  */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of init */
+
+
+
+
+:root{
+    --Brand-color: #1B54DD;
+    --White: #FFF;
+    --Gray-1: #1A2028;
+    --Grey-4: #262626;
+
+}
+
+
+.main-table{
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.first-sub-table{
+    border: 1px solid yellow;
+    background-color: var(--Brand-color);
+    width: 600px;
+    padding-bottom: 32px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-row{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    width: auto;
+    height: 55px;
+    border: 1px solid var(--Brand-color);
+    color: var(--White);
+    text-align: center;
+    font-size: 31.579px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 27.632px;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.second-title{
+    color: var(--White);
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+    font-size: 9.211px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 9.211px; /* 100% */
+    letter-spacing: 1.645px;
+    text-transform: uppercase;
+    border: 1px solid var(--Brand-color);
+}
+
+.beyonce{
+    color: var(--White);
+    text-align: center;
+
+    /* h1 */
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fact{
+    color: var(--White);
+    text-align: center;
+    /* h2 */
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 480px;
+}
+
+.wild{
+    width: 480px;
+    height: auto;
+    color: var(--White);
+    text-align: center;
+    /* Body */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cta1{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--Gray-1);
+    text-align: center;
+    text-decoration: none;
+}
+
+.filled{
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    border-radius: 2px;
+    background: var(--White);
+}
+
+.newsletter-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid black;
+
+}
+
+.news-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.newsletter{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.news-paragr{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 16px;
+
+}
+
+.news-text{
+    width: 208px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--Grey-4);
+}
+
+.news-link{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: 'Inter', sans-serif;
+    color: var(--Brand-color);
+    text-decoration: none;
+}
+
+.filled-2{
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background: var(--Brand-color, #1B54DD);
+    width: auto;
+    height: auto;
+}
+
+.cta2{
+    color: var(--White, #FFF);
+    text-align: center;
+    /* Link */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    padding: 26px 180px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: #E8E8E8;
+    margin-top: 32px;
+    width: auto;
+    height: auto;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.email{
+    width: 240px;
+    color:#262626;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.address{
+    width: 240px;
+    color: #262626;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+}

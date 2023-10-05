@@ -1,0 +1,475 @@
+/* init my css  */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of init */
+
+
+
+
+:root {
+    --blue-1: #2F80ED;
+    --Yellow: #F2C94C;
+    --Gray-1: #333;
+    --Gray-2: #4F4F4F;
+}
+
+.handyman-wrapper{
+    width: auto;
+    height: auto;
+    background-color: #FFF;
+}
+
+.upper{
+    /* width: 1440px; */
+    width: 100%;
+    height: 900px;
+    background-color: var(--blue-1);
+    background-image: url('Group.png');
+    background-repeat: repeat;
+}
+
+.middle{
+    width: 100%;
+    height: 659px;
+    background-color: #F0F6FE;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    position: relative;
+}   
+
+.middle::before{
+    content: "";
+    background-image: url('Group.png');
+    background-repeat: repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 30%;
+}
+
+.bottom{
+    width: 100%;
+    height: 468px;
+    display: flex;
+    flex-shrink: 0;
+    background-color: #F0F6FE;;
+    justify-content:space-between
+}   
+
+.last{
+    width: 1440px;
+    height: 80px;
+} 
+
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    /* width: 500px; */
+    width: auto;
+    height: 85px;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.round-rock{
+    color: #FFF; 
+    font-family: 'SF Pro Display', sans-serif; 
+    font-size: 46px; 
+    font-style: normal;
+    font-weight: 900; 
+    line-height: 1.185;   
+}
+
+.second-line {
+    color: #FFF; 
+    font-family: 'SF Pro Display', sans-serif; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-weight: 900; 
+    line-height: 1.185; 
+    letter-spacing: 6.03px; 
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: #FFF
+}
+  
+.nav-list li {
+    list-style-type: none;
+}
+   
+
+.nav-list{
+    display: flex;
+    color: #FFF; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    font-style: normal; 
+    font-weight: 500; 
+    line-height: 1.25;
+    gap: 50px;
+}
+
+.secontary-upper{
+    display: inline-flex;
+    gap: 80px;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.title{
+    color: #FFF;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 118.5%; 
+}
+
+.lorem{
+    margin-top: 15px;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* or 1.42857 to represent 142.857% */
+}
+
+.upper-btns{
+    margin-top: 30px;
+}
+
+.help-btn{
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background-color:var(--Yellow) ;
+    color: var(--Gray-1);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+
+    position: relative;
+    z-index: 1; /* Ορίζει το z-index για την εικόνα */
+}
+
+.help-link{
+    margin-left: 20px;
+    color: var(--Yellow, #F2C94C);
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */ 
+}
+
+.about-us-wrapper{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+
+
+.about-us-title{
+    color: #95B2D8;
+    text-align: center;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 118.5%; 
+
+}
+
+.about-us-secontary{
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    width: 100%;  
+}
+
+.bottom-about{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.second-image{
+    width: 504px;
+    height: 345px;
+    position: relative;
+    z-index: 1; /* Ορίζει το z-index για την εικόνα */
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px; 
+}
+
+.items{
+    width: 330px;
+}
+
+.number-container{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    stroke: #95B2D8;
+    border: 1px solid #95B2D8;
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+
+
+    color: #95B2D8;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+
+}
+
+.paragr{
+    color: var(--Gray-2);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-top: 10px;
+}
+
+.info-link{
+    color: #95B2D8;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+}
+
+.more-help{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.my-form{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+}
+
+
+.my-form input {
+
+
+    /* flex-direction: column; */
+    width: 470px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+
+    color: #4F4F4F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* opacity: 0.5; */
+}
+
+.my-form ::placeholder{
+    opacity: 0.5;
+}
+
+
+.error {
+    border: 2px solid red;
+  }
+
+.submit-btn{
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background:  #F2C94C;
+    margin-top: 11px;
+    color: #4F4F4F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.last-image{
+    background-color: #F0F6FE;
+    width: auto;
+    position: relative;
+}
+
+
+
+.last-element {
+    width: 532px;
+    background-color: var(--blue-1);
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url('Group.png');
+    
+}
+
+
+.last-element::before {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    content: "We he";
+
+    width: 20rem;
+    height: 100%;
+    background-color: var(--blue-1);
+    z-index: 100;
+    clip-path: polygon(65% 0, 100% 0, 100% 100%, 13% 100%);
+    left: -20rem; 
+    top: 0;
+
+    color: #FFF;
+    text-align: left;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 118.5%; 
+
+    background-image: url('Group.png');
+}
+
+
+  
+  
+
+.weird{
+    width: 800px;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+
+
+.last-text{
+    color: #FFF;
+    text-align: left;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 118.5%; 
+}
+
+.end{
+    height: 80px;
+    background-color:  #22426D;;
+    width: 100%;
+}
+
